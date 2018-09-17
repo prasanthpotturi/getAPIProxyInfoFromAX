@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>ME-extractRequestPayload</Name>
+            </Step>
+            <Step>
+                <Name>EX-formParams</Name>
+            </Step>
+            <Step>
+                <Name>EX-getProxyNames</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>AM-sendResponse</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows/>
+    <HTTPProxyConnection>
+        <BasePath>/getAPIProxyInfoFromAX</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="NullRoute"/>
+</ProxyEndpoint>

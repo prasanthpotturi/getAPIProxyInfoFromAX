@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="getAPIProxyInfoFromAX">
+    <Basepaths>/fetchpathfromax</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1537205166963</CreatedAt>
+    <CreatedBy>ppotturi@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>fetchPathFromAx</DisplayName>
+    <LastModifiedAt>1537205320152</LastModifiedAt>
+    <LastModifiedBy>ppotturi@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:0f3968743e037e24846abb4e2e5dfc025ea21be2119da8045c334d8303cf824cbff8363ef38782cc21796cf3073f6de7ec9cd00db763fde1e49852d9db06da0f</ManifestVersion>
+    <Policies>
+        <Policy>AM-sendResponse</Policy>
+        <Policy>EX-formParams</Policy>
+        <Policy>EX-getProxyNames</Policy>
+        <Policy>ME-extractRequestPayload</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://extractProxyInfo.js</Resource>
+        <Resource>jsc://formParams.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

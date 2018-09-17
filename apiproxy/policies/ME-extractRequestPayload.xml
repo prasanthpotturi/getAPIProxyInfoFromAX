@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ME-extractRequestPayload">
+    <DisplayName>ME-extractRequestPayload</DisplayName>
+    <Source>request</Source>
+    <FormParam name="startdaterange">
+        <Pattern>{startdaterange}</Pattern>
+    </FormParam>
+    <FormParam name="enddaterange">
+        <Pattern>{enddaterange}</Pattern>
+    </FormParam>
+    <FormParam name="path">
+        <Pattern>{path}</Pattern>
+    </FormParam>
+    <FormParam name="proxyname">
+        <Pattern>{proxyname}</Pattern>
+    </FormParam>
+    <FormParam name="mgmturl">
+        <Pattern>{mgmturl}</Pattern>
+    </FormParam>
+    <FormParam name="org">
+        <Pattern>{org}</Pattern>
+    </FormParam>
+    <FormParam name="env">
+        <Pattern>{env}</Pattern>
+    </FormParam>
+    <Header name="Authorization"/>
+</ExtractVariables>

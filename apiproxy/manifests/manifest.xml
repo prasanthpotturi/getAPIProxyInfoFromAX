@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-sendResponse" version="SHA-512:75f5d0ad56e01f6788fdf418bf152c3064bb1d0b48448af607843032d642ab9ce68dce10bec0527c93613df6a0938b0d8ebc8590a1eb1fdfbaa555f63e23c76f"/>
+        <VersionInfo resourceName="EX-formParams" version="SHA-512:5e30a144207535eddffcab242cbdee75326121aab274551616b34ff45b93edacff83cd4f870f107cae93591f7723d3abae114b6d11bd37663470d13038ae1ce1"/>
+        <VersionInfo resourceName="EX-getProxyNames" version="SHA-512:621bc4107f4a461399f08f2776d436e0748f5125ce0d2faa947d46541b03742a41e76ee28fe68898ed9f68c0693cc2c7011e27bfe3395b3b5859e1ac8020756f"/>
+        <VersionInfo resourceName="ME-extractRequestPayload" version="SHA-512:0c96adb67ddf4e2f6edcb621dd67516da259dba9efe6fa10ce15049661d509ef448dcc72b8d3d25bf9f708c806b736f4174757ee597adb0f98a6c27320f6f98d"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:c137aa43f3b43511be2275de13978dbd2e20eacf2961bc63bb769886fc7f7cf93292445cff5f36764762f00d921c60c427b9f34641a613e1ba26007e99174f6b"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://extractProxyInfo.js" version="SHA-512:df6b07f051517a19a092b257cad47ff933975b93657bccf5cca1d5415201e85caa5029160d443e170610c0a34e0168c1baf5212f45f99e4192b66eb5d30e8878"/>
+        <VersionInfo resourceName="jsc://formParams.js" version="SHA-512:9577913252408acbc5d6f44c8196adbac78a5f62004b6718f1877b1905cbbbeeb9ee631aadd3e6cd1b264a37a3c573e14b5b166daabc869cb166f476456be01b"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:39cc5a608b2e691e340597fd6d3efcb52fa03844de4aabfe25a8859af7febe585963dd70782036cc01fc249d47771885f6cc34334473a09c54d06d9e703183a3"/>
+    </TargetEndpoints>
+</Manifest>
