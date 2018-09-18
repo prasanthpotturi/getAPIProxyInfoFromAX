@@ -1,13 +1,15 @@
 # GET API Proxy Information from AX
-idea for building this proxy was to present different approach for fetching revision and basepaths from AX instead of quering from MPs/Runtime. Noticed that sometimes due to load .i.e. multiple proxies revisions deployed across multiple envs, the deployed proxy revision and the revision serving traffic are different. In order to get to root cause would need to create/view  custom reports. 
+Idea for building this proxy was to present different approach for fetching revision and basepaths from AX instead of quering from MPs/Runtime. Noticed that sometimes due to load .i.e. multiple proxies revisions deployed across multiple envs, the deployed proxy revision and the revision serving traffic are different. In order to get to root cause would need to create/view  custom reports. 
 This API does extact samething under the hood by quering AX for various AX-dimensions such as basepaths, revisions etc.. targeted onto a specific org-env-timerange combinations, this will help users/developers in providing the correct API basepath/revisions which is serving traffic at runtime and help them during debugging through such instances.
-#Steps to run install
+
+# Steps to run install
 1. Download and install Maven 3.0.*
 2. Clone this repo https://github.com/prasanthpotturi/getAPIProxyInfoFromAX
 3. cd getAPIProxyInfoFromAX/getAPIProxyInfoFromAX
 4. Execute mvn install -Ptest -Dusername={apigee-edge-email} -Dpassword={apigee-edge-password} -Dorg={apigee-edge-org}
 
-#Steps to test/run
+# Steps to test/run
+
 Header:
 Authorization: Basic <orgAdmin/readonlyOrgAdmin>
 Content-Type:application/x-www-form-urlencoded
