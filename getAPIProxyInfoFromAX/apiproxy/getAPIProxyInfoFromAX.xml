@@ -4,7 +4,7 @@
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1537205166963</CreatedAt>
     <CreatedBy>ppotturi@google.com</CreatedBy>
-    <Description></Description>
+    <Description>This proxy will fetch proxy revision/basepaths from runtime AX formparams: startdaterange:09/14/2018+09:00:00 enddaterange:09/15/2018+16:00:00 org:{orgname} env:{env} mgmturl:https://api.enterprise.apigee.com proxyname:all|&lt;specific api proxy&gt;</Description>
     <DisplayName>fetchPathFromAx</DisplayName>
     <LastModifiedAt>1537205320152</LastModifiedAt>
     <LastModifiedBy>ppotturi@google.com</LastModifiedBy>

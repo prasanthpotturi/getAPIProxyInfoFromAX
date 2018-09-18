@@ -8,9 +8,6 @@
     <FormParam name="enddaterange">
         <Pattern>{enddaterange}</Pattern>
     </FormParam>
-    <FormParam name="path">
-        <Pattern>{path}</Pattern>
-    </FormParam>
     <FormParam name="proxyname">
         <Pattern>{proxyname}</Pattern>
     </FormParam>
