@@ -13,15 +13,21 @@ This API does extact samething under the hood by quering AX for various AX-dimen
 ### Header:
 
 Authorization: Basic <orgAdmin/readonlyOrgAdmin>
+
 Content-Type:application/x-www-form-urlencoded
 
 ### Body:
 
 startdaterange:09/14/2018+09:00:00 (format: mm/dd/YYYY+HH:mi:ss)
+
 enddaterange:09/15/2018+16:00:00   (format: mm/dd/YYYY+HH:mi:ss)
+
 org: {org-name} //organization name
+
 env: {environment Name} //environment name
+
 mgmturl: {management api url} //e.g: https://api.enterprise.apigee.com
+
 proxyname: {all|<specific api proxy>} //all - to fetch 'all' or 'specific(proxyname)' api/s running during that time frame
 
 
@@ -30,42 +36,76 @@ proxyname: {all|<specific api proxy>} //all - to fetch 'all' or 'specific(proxyn
 //Sample response : when proxyname: all; then this api proxy returns details about all proxies running during provided timeframe 
 
 {
+
     "apiProxyInfo": [
+
         {
+
             "name": "test",
+
             "basepaths": [
+
                 "/test"
+
             ],
+
             "revisions": [
+
                 "2"
+
             ]
+
         },
+
         {
+
             "name": "sample",
+
             "basepaths": [
+
                 "/sample"
+
             ],
+
             "revisions": [
+
                 "1"
+
             ]
+
         } ]
+
         }
+
     ]
+
 }
 
 //Sample response : when proxyname: test; then this api proxy returns details about 'test' proxy during provided timeframe 
 
 {
+
     "apiProxyInfo": [
+
         {
+
             "name": "test",
+
             "basepaths": [
+
                 "/test"
+
             ],
+
             "revisions": [
+
                 "2"
+
             ]
+
         }
+
     ]
+
 }
 
